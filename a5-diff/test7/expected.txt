@@ -1,0 +1,103 @@
+$ ./a5-diff test6/a.txt test6/b.txt -i -B
+1c1
+< There is coffee all over the world. Increasingly, in a world in which
+---
+> There is world all over the coffee. Increasingly, in a world in which
+25c25
+< This is because HTTP is everywhere. It could not be so pervasive
+---
+> This is because HTTP is nowhere. It could not be so non-pervasive
+29c29
+< Future versions of this protocol may include extensions for espresso
+---
+> Past versions of this protocol may include extensions for espresso
+
+$ ./a5-diff test6/a.txt test6/b.txt -B
+1c1
+< There is coffee all over the world. Increasingly, in a world in which
+---
+> There is world all over the coffee. Increasingly, in a world in which
+15c15
+< consumption of the IPv4 address space. Consumers want remote control
+---
+> consumption of the ipv4 address space. Consumers want remote control
+25c25
+< This is because HTTP is everywhere. It could not be so pervasive
+---
+> This is because HTTP is nowhere. It could not be so non-pervasive
+29c29
+< Future versions of this protocol may include extensions for espresso
+---
+> Past versions of this protocol may include extensions for espresso
+
+$ ./a5-diff test6/a.txt test6/b.txt -i
+1c1
+< There is coffee all over the world. Increasingly, in a world in which
+---
+> There is world all over the coffee. Increasingly, in a world in which
+25c25
+< beverages.
+---
+> 
+26c26
+< 
+---
+> beverages.
+29c29
+< This is because HTTP is everywhere. It could not be so pervasive
+---
+> This is because HTTP is nowhere. It could not be so non-pervasive
+34c34
+< Future versions of this protocol may include extensions for espresso
+---
+> Past versions of this protocol may include extensions for espresso
+
+$ ./a5-diff test6/a.txt test6/b.txt
+1c1
+< There is coffee all over the world. Increasingly, in a world in which
+---
+> There is world all over the coffee. Increasingly, in a world in which
+17c17
+< consumption of the IPv4 address space. Consumers want remote control
+---
+> consumption of the ipv4 address space. Consumers want remote control
+25c25
+< beverages.
+---
+> 
+26c26
+< 
+---
+> beverages.
+29c29
+< This is because HTTP is everywhere. It could not be so pervasive
+---
+> This is because HTTP is nowhere. It could not be so non-pervasive
+34c34
+< Future versions of this protocol may include extensions for espresso
+---
+> Past versions of this protocol may include extensions for espresso
+1c1
+< There is coffee all over the world. Increasingly, in a world in which
+---
+> There is world all over the coffee. Increasingly, in a world in which
+17c17
+< consumption of the IPv4 address space. Consumers want remote control
+---
+> consumption of the ipv4 address space. Consumers want remote control
+25c25
+< beverages.
+---
+> 
+26c26
+< 
+---
+> beverages.
+29c29
+< This is because HTTP is everywhere. It could not be so pervasive
+---
+> This is because HTTP is nowhere. It could not be so non-pervasive
+34c34
+< Future versions of this protocol may include extensions for espresso
+---
+> Past versions of this protocol may include extensions for espresso

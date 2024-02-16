@@ -1,0 +1,21 @@
+$ ./a5-diff test2/a.txt test2/b.txt
+1c1
+< CO is the best course in the world.
+---
+> CO is the coolest course in the world.
+2c2
+< Assembly is challenging, but fun!
+---
+> Assembly is the greatest thing ever!
+4c4
+< The TAs are super knowledgeable.
+---
+> The TAs are helpful.
+5c5
+< Who needs Python?
+---
+> Who needs C?
+6c6
+< The quick brown fox jumps over a lazy dog
+---
+> The five boxing wizards jump quickly

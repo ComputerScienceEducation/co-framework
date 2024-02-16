@@ -1,0 +1,5 @@
+$ ./a5-diff test1/a.txt test1/b.txt
+2c2
+< Test file 1 to be precise.
+---
+> Test file 2 to be precise.

@@ -1,0 +1,23 @@
+$ ./a5-diff test4/a.txt test4/b.txt -i
+
+$ ./a5-diff test4/a.txt test4/b.txt
+1c1
+< CO is the best course in the world.
+---
+> co is the best course in the world.
+2c2
+< Assembly is challenging, but fun!
+---
+> assembly is challenging, but fun!
+4c4
+< The TAs are super knowledgeable.
+---
+> the TAs are super knowledgeable.
+5c5
+< Who needs Python?
+---
+> who needs Python?
+6c6
+< The quick brown fox jumps over a lazy dog
+---
+> the quick brown fox jumps over a lazy dog

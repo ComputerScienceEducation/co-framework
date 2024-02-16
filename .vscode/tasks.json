@@ -1,0 +1,55 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build file",
+            "type": "shell",
+            "command": "${config:cmdBuildDebug} ${relativeFileDirname}/${fileBasenameNoExtension}",
+            "group": "build",
+        },
+        {
+            "label": "build a5-diff",
+            "type": "shell",
+            "command": "${config:cmdBuildDebug} a5-diff/a5-diff",
+            "group": "build",
+        },
+        {
+            "label": "build a6-printf-frame",
+            "type": "shell",
+            "command": "${config:cmdBuildDebug} a6-printf/a6-printf-frame",
+            "group": "build",
+        },
+        {
+            "label": "build a7-bmp-encode",
+            "type": "shell",
+            "command": "${config:cmdBuildDebug} a7-bmp/a7-bmp-encode",
+            "group": "build",
+        },
+        {
+            "label": "build a7-bmp-decode",
+            "type": "shell",
+            "command": "${config:cmdBuildDebug} a7-bmp/a7-bmp-decode",
+            "group": "build",
+        },
+        {
+            "label": "build a8-hpc (custom)",
+            "type": "shell",
+            "command": "${config:cmdBuildDebug} a8-hpc/a8-hpc -e STREAM_ARRAY_SIZE=${input:hpcSize} STREAM_RUNS=${input:hpcRuns}",
+            "group": "build",
+        },
+    ],
+    "inputs": [
+        {
+            "id": "hpcSize",
+            "type": "promptString",
+            "description": "Array Size",
+            "default": "75000000",
+        },
+        {
+            "id": "hpcRuns",
+            "type": "promptString",
+            "description": "Kernel Runs",
+            "default": "20",
+        },
+    ]
+}

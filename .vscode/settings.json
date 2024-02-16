@@ -1,0 +1,5 @@
+{
+    "cmdBuildDebug": "make -B",
+    "debug.allowBreakpointsEverywhere": true,
+    "editor.suggest.showWords": false
+}

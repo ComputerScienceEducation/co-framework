@@ -1,0 +1,14 @@
+# ignore all files in subfolders starting with a (for catching execuables)
+a*/*
+a8-hpc/stream
+
+# but don't ignore files that have an extension
+!a*/*.*
+# or that are in a subsubfolder
+!a*/*/
+
+# ignore these types no matter where they are
+**.dSYM
+**.DS_Store
+**.o
+**.out

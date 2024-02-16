@@ -1,0 +1,26 @@
+Hello, World!
+Good Bye
+
+Unsigned Value: 95
+Value: 42
+Negative Value: -42
+String: Computer Organization
+100% Complete
+
+You need to collect 9750 points to get a 10 for the Computer Organization course.
+99% of computers think that Assembly is a nice language!
+6 ECTS (European Credit Transfer and Accumulation System) credits correspond to 168 hours of work.
+
+Max: 2147483647, Min: -2147483648
+Overflow: -2147483648, Underflow: 2147483647
+Max Unsigned: 4294967295
+Overflow Unsigned: 0
+Empty String: 
+Raw Format Specifiers: %d %u %s %%
+Specifier after percentage sign %d
+Float: %f
+42
+
+Pioneering computers like ENIAC, UNIVAC, and IBM 701 were built in 1945, 1951, and 1952, featuring memory sizes of 20 KB, 1000 KB, and 2048 KB.
+The x86_64 architecture, also known as AMD64, was introduced by AMD in 2000 as an extension to the 32-bit x86, increasing the word size to 64 bits and supporting up to 16 EB of memory.
+

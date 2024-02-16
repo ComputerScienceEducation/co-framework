@@ -1,0 +1,19 @@
+$ ./a5-diff test5/a.txt test5/b.txt -B
+
+$ ./a5-diff test5/a.txt test5/b.txt
+6c6
+< 
+---
+> Step 3: Stress out about the assignment because the deadline is tomorrow and no work has been done
+7c7
+< 
+---
+> Step 4: Fail the assignment
+52c52
+< Step 3: Stress out about the assignment because the deadline is tomorrow and no work has been done
+---
+> 
+53c53
+< Step 4: Fail the assignment
+---
+> 
