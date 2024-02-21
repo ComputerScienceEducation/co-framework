@@ -17,7 +17,7 @@
         .global _main
     #endif
 #else 
-    .global bmp_encode
+    .global bmp_decode
     _printf: jmp printf
     _malloc: jmp malloc
     _calloc: jmp calloc
