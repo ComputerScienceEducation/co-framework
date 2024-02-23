@@ -136,10 +136,10 @@ a6-frame-bonus: a6-printf/a6-printf-frame
 	./$< bonus
 
 a7-encode: a7-bmp/a7-bmp-encode
-	./$< "Hello from the Makefile"
+	./$< a7-bmp/image.bmp "Secret Key" "Hello from the Makefile"
 
 a7-decode: a7-bmp/a7-bmp-decode
-	./$<
+	./$< a7-bmp/image.bmp "Secret Key"
 
 a8:	a8-hpc/a8-hpc
 	./$<

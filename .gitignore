@@ -7,6 +7,9 @@ a8-hpc/stream
 # or that are in a subsubfolder
 !a*/*/
 
+# ignore a7 output
+a7-bmp/image.bmp
+
 # ignore these types no matter where they are
 **.dSYM
 **.DS_Store
