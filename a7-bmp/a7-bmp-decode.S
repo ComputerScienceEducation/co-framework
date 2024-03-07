@@ -13,6 +13,8 @@
     strlen: jmp _strlen
     strncpy: jmp _strncpy
     strnlen: jmp _strnlen
+    memset: jmp _memset
+    memcpy: jmp _memcpy
     #ifdef STANDALONE
         .global _main
     #endif
@@ -31,6 +33,8 @@
     _strlen: jmp strlen
     _strncpy: jmp strncpy
     _strnlen: jmp strnlen
+    _memset: jmp memset
+    _memcpy: jmp memcpy
     #ifdef STANDALONE
         .global main
     #endif
