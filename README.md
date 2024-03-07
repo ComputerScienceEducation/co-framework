@@ -23,11 +23,6 @@ If the prompt did not appear or you have accidentally dismissed it, simply follo
 
 If the aforementioned steps do not work for you, you can also find the list of required extensions in the `extensions.json` file as part of the `.vscode` folder of the framework and manually search and install the extensions.
 
-### Additional Extension Setup
-The Assembly language extension uses semicolons as line comments by default. 
-The AT&T syntax, however, uses the hash character and does not treat lines starting with a semicolon as being commented. 
-If you want to fix this behavior such that you can use the line comment keyboard shortcut (⌘/ | CTRL + /), follow the steps given in the [Guide for Fixing the Line Comment Symbol](#guide-for-fixing-the-line-comment-symbol).
-
 ## Skeleton Files
 For the first 9 assignments, skeleton files are provided that should serve as the starting point for your implementation. 
 It is essential that you do not delete or modify the existing code (except for the comments). 
@@ -115,79 +110,6 @@ This, however, seemed to needlessly blow up the number of files in the framework
 Thereby, the files include the preprocessor directives `#ifdef STANDALONE ...`, which is used to only make your `main` implementation global when the `STANDALONE` flag is set during the preprocessor run (which again is automatically handled by the Makefile targets).
 
 # Appendix
-
-## Guide for Fixing the Line Comment Symbol
-As explained before, the Assembly language extensions uses semicolons by default for line comments. 
-The syntax and assembler used in this framework, however, require the hash character for commented lines. 
-
-You can modify the behavior of the extension using the steps below. 
-The initial steps (opening the configuration file) differ between Windows and macOS/Linux (and Codespaces), the final steps are universal to all OSs.
-
-### macOS / Linux
-1. Open a Terminal window and type:\
-`cd ~/.vscode/extensions/13xforever.language-x86-64-assembly-` \
-but do not press enter yet.
-
-2. Use the Tab key to autocomplete the command for the version of the extension that you have installed (e.g., 3.1.4) and press enter.
-
-3. Now enter:\
-`code language-configuration.json`
-
-4. Continue to the [universal](#universal) steps below.
-
-### Windows
-1. Open a **Command Line / Powershell** window (not a WSL terminal!) and type:\
-`cd ~\.vscode\extensions\13xforever.language-x86-64-assembly-` \
-but do not press enter yet.
-
-2. Use the Tab key to autocomplete the command for the version of the extension that you have installed (e.g., 3.1.4) and press enter.
-
-3. Now enter:\
-`code language-configuration.json`
-
-4. Continue to the [universal](#universal) steps below.
-
-### Codespaces
-1. Open a Terminal (⌃\` | Ctrl + \`) and type:\
-`cd ~/.vscode-remote/extensions/13xforever.language-x86-64-assembly-` \
-but do not press enter yet.
-
-2. Use the Tab key to autocomplete the command for the version of the extension that you have installed (e.g., 3.1.4) and press enter.
-
-3. Now enter:\
-`code language-configuration.json`
-
-4. Continue to the [universal](#universal) steps below.
-
-### Universal
-A VS Code editor should open and show the `language-configuration.json` file contents. The file content should look something like this:
-
-```yaml
-{
-    "comments": {
-        // symbol used for single line comment. Remove this entry if your language does not support line comments
-        "lineComment": ";"
-    },
-    // symbols used as brackets
-    // ...
-}
-```
-
-To update the settings, simply change the `;` value of the `lineComment` property to a `#`. The contents should now look like this:
-
-```yaml
-{
-    "comments": {
-        // symbol used for single line comment. Remove this entry if your language does not support line comments
-        "lineComment": "#"
-    },
-    // symbols used as brackets
-    // ...
-}
-```
-
-Finally, save the file and restart VS Code for the settings to take effect 
-
 
 ## Intel Mac Debugger Fix
 The Code LLDB extension that is needed for the debugger seems to give issues on some macOS devices running on Intel processors.
