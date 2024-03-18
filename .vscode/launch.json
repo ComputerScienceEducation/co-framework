@@ -48,7 +48,7 @@
             "args": ["${input:bmpFilename}", "${input:bmpKey}"],
             "cwd": "${workspaceFolder}",
             "stopOnEntry": false,
-            "preLaunchTask": "build a7-bmp-encode",
+            "preLaunchTask": "build a7-bmp-decode",
         },
         {
             "name": "Debug a8-hpc (custom)",
